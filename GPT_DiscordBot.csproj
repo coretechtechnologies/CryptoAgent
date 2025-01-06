@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Betalgo.OpenAI" Version="7.4.3" />
+    <PackageReference Include="Betalgo.OpenAI.GPT3" Version="6.8.4" />
+    <Reference Include="Discord.Net.Core">
+      <HintPath>./discord.net but without 1984/Discord.Net.Core.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <Reference Include="Discord.Net.Rest">
+      <HintPath>./discord.net but without 1984/Discord.Net.Rest.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <Reference Include="Discord.Net.WebSocket">
+      <HintPath>./discord.net but without 1984/Discord.Net.WebSocket.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>./discord.net but without 1984/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>./discord.net but without 1984/Newtonsoft.Json.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <Reference Include="System.Interactive.Async">
+      <HintPath>./discord.net but without 1984/System.Interactive.Async.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <Reference Include="System.Linq.Async">
+      <HintPath>./discord.net but without 1984/System.Linq.Async.dll</HintPath>
+      <Private>true</Private> <!-- ensures it's copied to the output folder -->
+    </Reference>
+    <PackageReference Include="Microsoft.ML" Version="2.0.1" />
+    <PackageReference Include="Microsoft.ML.Tokenizers" Version="0.20.1" />
+    <PackageReference Include="WTelegramClient" Version="4.2.1" />
+  </ItemGroup>
+
+</Project>
